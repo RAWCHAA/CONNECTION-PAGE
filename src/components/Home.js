@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container rain">
       <h1>THE WORLD'S LAST HOPE.</h1>
       <div className="choice">
         <div className="box-2">
