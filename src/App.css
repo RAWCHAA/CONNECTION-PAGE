@@ -5,7 +5,11 @@ body {
   background-image: url("./SHIELD.png");
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  *zoom: 0;
+  display: block;
 }
+
 .rain {
   height: 100vh;
   background: url("./rain.png");
@@ -66,6 +70,16 @@ h1 {
   padding-bottom: 50px;
 }
 
+.hammer {
+  font-family: Papyrus, fantasy;
+  font-size: 58px;
+  font-style: italic;
+  font-variant: normal;
+  font-weight: 700;
+  color: orange;
+  text-align: center;
+}
+
 p {
   font-family: Papyrus, fantasy;
   margin: 10px;
@@ -74,18 +88,6 @@ p {
   text-align: center;
   font-size: xx-large;
   font-weight: 600;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Papyrus, fantasy;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
 }
 
 .choice {
@@ -161,4 +163,65 @@ div[class*="box"] {
 .btn-two:hover::after {
   transform: rotate(45deg);
   background-color: rgba(255, 255, 255, 0);
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+}
+.contained {
+  margin: 0 auto;
+  width: 90%;
+}
+@media (min-width: 500px) {
+  .contained {
+    width: 80%;
+  }
+}
+@media (min-width: 600px) {
+  .contained {
+    width: 60%;
+  }
+}
+
+main {
+  padding: 1em 0;
+  position: relative;
+  background: #ff0000;
+  box-shadow: 0px -10px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* --- Important Pen Styles --- */
+
+header {
+  overflow: hidden;
+  padding-bottom: 55%;
+}
+@media (min-width: 600px) {
+  header {
+    padding-bottom: 50%;
+  }
+}
+@media (min-width: 700px) {
+  header {
+    padding-bottom: 45%;
+  }
+}
+
+header img {
+  width: 100%;
+  max-width: none;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }

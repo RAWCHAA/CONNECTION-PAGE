@@ -6,7 +6,7 @@ import Friends from "./components/Friends";
 import Profile from "./components/Profile";
 import Interest from "./components/Interest";
 import Connection from "./components/Connection";
-
+import Photos from "./components/Photos";
 function App() {
   return (
     <Router>
@@ -25,6 +25,9 @@ function App() {
         </Route>
         <Route exact path="/Connection">
           <Connection />
+        </Route>
+        <Route exact path="/Photos">
+          <Photos />
         </Route>
       </Switch>
     </Router>
