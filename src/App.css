@@ -10,6 +10,23 @@ body {
   display: block;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 3px;
+  background-color: orange;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: red;
+}
+
 .rain {
   height: 100vh;
   background: url("./rain.png");
@@ -80,13 +97,13 @@ h1 {
   text-align: center;
 }
 
-p {
+.open {
   font-family: Papyrus, fantasy;
   margin: 10px;
   padding: 5px;
   color: orange;
   text-align: center;
-  font-size: xx-large;
+  font-size: 50px;
   font-weight: 600;
 }
 
@@ -125,7 +142,7 @@ div[class*="box"] {
   position: relative;
   font-weight: 700;
 }
-.btn-two span {
+.btn-two a {
   z-index: 2;
   display: block;
   position: absolute;

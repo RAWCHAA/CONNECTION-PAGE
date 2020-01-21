@@ -1,4 +1,7 @@
 import React from "react";
+import Profile from "./Profile";
+import Connection from "./Connection";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -7,16 +10,16 @@ export default function Home() {
       <div className="choice">
         <div className="box-2">
           <div className="btn btn-two">
-            <span>ENTER</span>
+            <Link to="/Profile">ENTER</Link>
           </div>
         </div>
         <div className="box-2">
           <div className="btn btn-two">
-            <span>CONNECTION</span>
+            <Link to="/Connection">CONNECT</Link>
           </div>
         </div>
       </div>
-      <p>
+      <p className="open">
         This is a information page so you can get to know the man behind the
         smile.
       </p>

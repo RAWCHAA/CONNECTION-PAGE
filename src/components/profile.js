@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import $ from "jquery";
-
+import Navbar from "./Navbar";
 import fly from "../fly.jpg";
+import Connection from "./Connection";
+import Interest from "./Interest";
+import Messages from "./Messages";
 
 export default function Profile() {
   useEffect(() => {
@@ -22,9 +25,10 @@ export default function Profile() {
 
   return (
     <div>
-      <header className="zoom-me">
+      {/* <header className="zoom-me">
         <img src={fly} />
-      </header>
+      </header> */}
+      <Navbar />
       <main role="main">
         <div className="contained">
           <h1>WILLIAM BUTLER</h1>

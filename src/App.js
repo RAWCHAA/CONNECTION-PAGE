@@ -7,6 +7,9 @@ import Profile from "./components/Profile";
 import Interest from "./components/Interest";
 import Connection from "./components/Connection";
 import Photos from "./components/Photos";
+import Navbar from "./components/Navbar";
+import Messages from "./components/Messages";
+
 function App() {
   return (
     <Router>
