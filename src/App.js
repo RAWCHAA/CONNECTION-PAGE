@@ -7,18 +7,17 @@ import Profile from "./components/Profile";
 import Interest from "./components/Interest";
 import Connection from "./components/Connection";
 import Photos from "./components/Photos";
-import Navbar from "./components/Navbar";
 import Messages from "./components/Messages";
 
 function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/Friends">
-          <Friends />
-        </Route>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route exact path="/Friends">
+          <Friends />
         </Route>
         <Route exact path="/Interest">
           <Interest />
@@ -31,6 +30,9 @@ function App() {
         </Route>
         <Route exact path="/Photos">
           <Photos />
+        </Route>
+        <Route exact path="/Messages">
+          <Messages />
         </Route>
       </Switch>
     </Router>

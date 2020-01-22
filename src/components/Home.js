@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="container rain">
+    <div>
       <h1>THE WORLD'S LAST HOPE.</h1>
       <div className="choice">
         <div className="box-2">

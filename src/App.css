@@ -1,79 +1,30 @@
 body {
-  background: rgb(0, 0, 0);
   margin: 0;
-  padding: 0;
+  padding: 70px 0;
   background-image: url("./SHIELD.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   *zoom: 0;
   display: block;
+  position: absolute;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .navbar {
   display: flex;
   justify-content: space-evenly;
-  margin: 30px 3px;
-  background-color: orange;
+  margin: 0;
+  background: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  align-items: center;
 }
 
 .navbar a {
   text-decoration: none;
   color: red;
-}
-
-.rain {
-  height: 100vh;
-  background: url("./rain.png");
-  animation: rain 0.4s linear infinite;
-}
-.rain:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  animation: lighting 6.2s linear infinite;
-  opacity: 0;
-}
-@keyframes rain {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 20% 100%;
-  }
-}
-@keyframes lighting {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  11% {
-    opacity: 1;
-  }
-  14% {
-    opacity: 4;
-  }
-  20% {
-    opacity: 0;
-  }
-  21% {
-    opacity: 0;
-  }
-  24% {
-    opacity: 1;
-  }
-  104% {
-    opacity: 4;
-  }
 }
 
 h1 {
@@ -82,9 +33,20 @@ h1 {
   font-style: normal;
   font-variant: normal;
   font-weight: 700;
-  color: orange;
+  color: rgb(255, 0, 0);
   text-align: center;
   padding-bottom: 50px;
+}
+
+h4 {
+  font-family: Papyrus, fantasy;
+  color: #ff0000;
+  position: relative;
+  text-align: left;
+}
+p {
+  font-size: 22px;
+  font-weight: bolder;
 }
 
 .hammer {
@@ -93,7 +55,7 @@ h1 {
   font-style: italic;
   font-variant: normal;
   font-weight: 700;
-  color: orange;
+  color: rgb(255, 0, 0);
   text-align: center;
 }
 
@@ -101,7 +63,7 @@ h1 {
   font-family: Papyrus, fantasy;
   margin: 10px;
   padding: 5px;
-  color: orange;
+  color: rgb(255, 0, 0);
   text-align: center;
   font-size: 50px;
   font-weight: 600;
@@ -170,7 +132,7 @@ div[class*="box"] {
   height: 100%;
   z-index: 1;
   transition: all 0.5s;
-  border: 1px solid rgb(255, 94, 0);
+  border: 1px solid orange;
   background-color: rgba(0, 0, 0, 0);
 }
 .btn-two:hover::before {
@@ -212,33 +174,25 @@ img {
 main {
   padding: 1em 0;
   position: relative;
-  background: #ff0000;
   box-shadow: 0px -10px 60px rgba(0, 0, 0, 0.25);
 }
 
-/* --- Important Pen Styles --- */
-
-header {
-  overflow: hidden;
-  padding-bottom: 55%;
-}
-@media (min-width: 600px) {
-  header {
-    padding-bottom: 50%;
-  }
-}
-@media (min-width: 700px) {
-  header {
-    padding-bottom: 45%;
-  }
+/* photos */
+.gallery {
+  text-align: center;
 }
 
-header img {
-  width: 100%;
-  max-width: none;
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+img {
+  max-height: 10vh;
+  min-width: 50%;
+  max-width: 50%;
+  object-fit: cover;
+  vertical-align: bottom;
+  transition: max-height 0.5s linear;
+  transform-origin: bottom;
+}
+
+img:hover {
+  max-height: 100vh;
+  max-width: 60%;
 }

@@ -1,33 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
 import $ from "jquery";
-import Navbar from "./Navbar";
-import fly from "../fly.jpg";
 import Connection from "./Connection";
 import Interest from "./Interest";
 import Messages from "./Messages";
+import Navbar from "./Navbar";
+import { Link } from "react-router-dom";
 
 export default function Profile() {
-  useEffect(() => {
-    scroll();
-  }, []);
-
-  function scroll() {
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      $(".zoom-me img").css({
-        width: 100 + scroll / 5 + "%",
-        top: -(scroll / 40) + "%",
-        "-webkit-filter": "blur(" + scroll / 200 + "px)",
-        filter: "blur(" + scroll / 50 + "px)"
-      });
-    });
-  }
-
   return (
     <div>
-      {/* <header className="zoom-me">
-        <img src={fly} />
-      </header> */}
       <Navbar />
       <main role="main">
         <div className="contained">
