@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
-import Friends from "./components/Friends";
+// import Contacts from "./components/Contacts";
 import Profile from "./components/Profile";
 import Interest from "./components/Interest";
 import Connection from "./components/Connection";
@@ -16,9 +16,9 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route exact path="/Friends">
-          <Friends />
-        </Route>
+        {/* <Route exact path="/Contacts">
+          <Contacts />
+        </Route> */}
         <Route exact path="/Interest">
           <Interest />
         </Route>

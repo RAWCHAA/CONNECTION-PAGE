@@ -5,6 +5,7 @@ import Profile from "./Profile";
 import Connection from "./Connection";
 import Interest from "./Interest";
 import Messages from "./Messages";
+import contacts from "./Contacts";
 
 export default function Navbar() {
   return (
@@ -18,10 +19,10 @@ export default function Navbar() {
       <Link to="../Interest">
         <i className="far fa-lightbulb" />
       </Link>
-      <Link to="../Friends">
+      <Link to="../Contacts">
         <i className="fas fa-users" />
       </Link>
-      <Link to="../Messages">
+      <Link to="../connection">
         <i className="fas fa-envelope" />
       </Link>
     </div>

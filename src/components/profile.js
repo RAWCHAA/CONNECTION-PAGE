@@ -3,6 +3,7 @@ import $ from "jquery";
 import Connection from "./Connection";
 import Interest from "./Interest";
 import Messages from "./Messages";
+import Contacts from "./Contacts";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 
