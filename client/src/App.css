@@ -402,5 +402,11 @@ img.preview {
 }
 
 /* interest */
-.split {
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+}
+.twitter-timeline {
+  font-family: Papyrus, fantasy;
+  color: #ff0000;
 }
