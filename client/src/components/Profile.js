@@ -1,12 +1,21 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import d from "../photos/3.jpg";
 
 export default function Profile() {
   return (
     <div>
       <Navbar />
       <main role="main">
+        <div class="row">
+          <div class="small-12 medium-2 large-2 columns">
+            <div class="circle">
+              <img class="pic profile-pic" src={d} />
+            </div>
+          </div>
+        </div>
         <div className="contained">
           <h1>WILLIAM BUTLER</h1>
           <p>
@@ -95,6 +104,7 @@ export default function Profile() {
           </p>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }

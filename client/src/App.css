@@ -26,6 +26,44 @@ body {
   text-decoration: none;
   color: red;
 }
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  background: black;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+}
+.footer a {
+  text-decoration: none;
+  color: red;
+}
+.profile-pic {
+  max-width: 400px;
+  max-height: 400px;
+  display: block;
+}
+.circle {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 1000px !important;
+  overflow: hidden;
+  width: 250px;
+  height: 250px;
+  border: 8px solid rgb(255, 0, 0);
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  right: 10px;
+}
+
+.pic {
+  max-width: 100%;
+  height: auto;
+}
 
 h1 {
   font-family: Papyrus, fantasy;
@@ -409,4 +447,21 @@ img.preview {
 .twitter-timeline {
   font-family: Papyrus, fantasy;
   color: #ff0000;
+}
+
+/* contacts */
+
+.jar {
+  display: flex;
+  margin: block;
+  justify-content: space-evenly;
+  display: inherit;
+}
+
+.trap {
+  overflow: hidden;
+  border: 8px solid rgb(0, 0, 0);
+  /* top: 40px;
+  left: 10px;
+  right: 10px; */
 }

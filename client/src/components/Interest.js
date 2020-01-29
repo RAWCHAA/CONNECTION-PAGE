@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
-
+import Footer from "./Footer";
 export default function Interest() {
   return (
     <div>
@@ -31,6 +31,7 @@ export default function Interest() {
           allow="encrypted-media"
         />
       </div>
+      <Footer />
     </div>
   );
 }

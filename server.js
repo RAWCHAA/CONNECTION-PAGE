@@ -2,13 +2,15 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const connectDb = require("./config/db");
+const connectDB = require("./config/db");
 
 connectDB();
 
 app.use(express.json({ extended: false }));
 
 // routes
+app.use("/api/user", require("./routes/user"));
+app.use("/api/image", require("./routes/image"));
 
 // serve static asset in production
 if (process.env.NODE_ENV === "production") {
