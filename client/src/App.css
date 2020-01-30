@@ -222,8 +222,8 @@ main {
 
 img {
   max-height: 10vh;
-  min-width: 50%;
-  max-width: 50%;
+  min-width: 25%;
+  max-width: 25%;
   object-fit: cover;
   vertical-align: bottom;
   transition: max-height 0.5s linear;
@@ -452,16 +452,23 @@ img.preview {
 /* contacts */
 
 .jar {
-  display: flex;
-  margin: block;
+  margin-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
   justify-content: space-evenly;
-  display: inherit;
 }
 
 .trap {
   overflow: hidden;
   border: 8px solid rgb(0, 0, 0);
-  /* top: 40px;
-  left: 10px;
-  right: 10px; */
+}
+
+.long {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: left;
+}
+h2 {
+  margin-right: 20px;
+  margin-left: 0px;
 }

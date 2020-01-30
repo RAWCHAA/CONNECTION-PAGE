@@ -17,16 +17,6 @@ export default function Connection() {
   const params = useParams();
   const history = useHistory();
 
-  // useEffect(() => {
-  //   const getUser = async () => {
-  //     const res = await axios.get(`/api/user/${params.id}`);
-  //     setEmail(res.data.email);
-  //     setName(res.data.displayName);
-  //     setPhoto(res.data.image);
-  //   };
-  //   getUser();
-  // }, []);
-
   const handleUpload = async id => {
     const formData = new FormData();
     formData.append("file", photo);
@@ -94,7 +84,7 @@ export default function Connection() {
             <label htmlFor="name"></label>
             <input
               type="text"
-              placeholder="Enter name."
+              placeholder="Enter  Name"
               name="name"
               id="name_input"
               onChange={e => setName(e.target.value)}
@@ -105,7 +95,7 @@ export default function Connection() {
             <label htmlFor="email"></label>
             <input
               type="email"
-              placeholder="Enter email."
+              placeholder="Enter  E-mail"
               name="email"
               id="email_input"
               onChange={e => setEmail(e.target.value)}
@@ -116,7 +106,7 @@ export default function Connection() {
             <label htmlFor="url"></label>
             <input
               type="text"
-              placeholder="Enter Social Site"
+              placeholder="Enter  Social  Site"
               name="url"
               id="url_input"
               onChange={e => setUrl(e.target.value)}
@@ -126,7 +116,7 @@ export default function Connection() {
             <label htmlFor="tel"></label>
             <input
               type="text"
-              placeholder="My number is"
+              placeholder="My  Number  Is"
               name="tel"
               id="tel_input"
               onChange={e => setTel(e.target.value)}

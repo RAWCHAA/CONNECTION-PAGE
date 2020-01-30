@@ -23,6 +23,7 @@ export default function Photos() {
     <div>
       <Navbar />
       <div className="gallery">
+        <h1>Moments With Rawchaa</h1>
         <div>
           <img src={a} />
         </div>

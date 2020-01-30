@@ -9,10 +9,10 @@ export default function Profile() {
     <div>
       <Navbar />
       <main role="main">
-        <div class="row">
-          <div class="small-12 medium-2 large-2 columns">
-            <div class="circle">
-              <img class="pic profile-pic" src={d} />
+        <div className="row">
+          <div className="small-12 medium-2 large-2 columns">
+            <div className="circle">
+              <img className="pic profile-pic" src={d} />
             </div>
           </div>
         </div>

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import Profile from "./Profile";
 import Connection from "./Connection";
 import Interest from "./Interest";
-import Messages from "./Messages";
 import contacts from "./Contacts";
 
 export default function Navbar() {
@@ -14,16 +13,16 @@ export default function Navbar() {
         <h4>WILLIAM BUTLER</h4>
       </Link>
       <Link to="../Photos">
-        <i className="fas fa-photo-video" />
+        <i className="far fa-images"></i>
       </Link>
       <Link to="../Interest">
         <i className="far fa-lightbulb" />
       </Link>
       <Link to="../Contacts">
-        <i className="fas fa-users" />
+        <i className="far fa-address-book"></i>
       </Link>
       <Link to="../connection">
-        <i className="fas fa-envelope" />
+        <i className="fas fa-link"></i>
       </Link>
     </div>
   );

@@ -20,7 +20,7 @@ export default function Contacts() {
       <div className="jar">
         <h1>Contacts</h1>
         {users.map(user => (
-          <div>
+          <div className="long">
             {user.image ? (
               <img
                 src={`data:${user.image.mimeType};base64,${new Buffer(
@@ -32,7 +32,7 @@ export default function Contacts() {
               />
             ) : null}
             <h2>{user.name}</h2>
-            <h2>{user.subject}</h2>
+            <h2>{user.webPage}</h2>
           </div>
         ))}
       </div>
