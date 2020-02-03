@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 const multer = require("multer");
-const upload = multer({ dest: "../src/photos" });
-const Image = require("../models/Image");
-const User = require("../models/User");
+const upload = multer({ dest: "./src/photos" });
+const Image = require("./models/Image");
+const User = require("./models/User");
 
 router.post("/:id", upload.single("file"), async (req, res) => {
   const id = req.params.id;

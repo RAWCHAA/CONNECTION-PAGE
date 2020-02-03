@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import d from "../photos/3.jpg";
+import d from "./photos/3.jpg";
 
 export default function Profile() {
   return (
