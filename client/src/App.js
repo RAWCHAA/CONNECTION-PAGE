@@ -7,7 +7,6 @@ import Profile from "./components/Profile";
 import Interest from "./components/Interest";
 import Connection from "./components/Connection";
 import Photos from "./components/Photos";
-import Messages from "./components/Messages";
 
 function App() {
   return (
@@ -30,9 +29,6 @@ function App() {
         </Route>
         <Route exact path="/Photos">
           <Photos />
-        </Route>
-        <Route exact path="/Messages">
-          <Messages />
         </Route>
       </Switch>
     </Router>
