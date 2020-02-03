@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import $ from "jquery";
 import { Link } from "react-router-dom";
 import a from "../photos/0.jpg";
 import b from "../photos/1.jpg";
