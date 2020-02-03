@@ -1,1 +1,1 @@
-{ "mongo": "", "jwtSecret": "onewest" }
+{ "mongo": "@ds061691.mlab.com:61691/heroku_xpd446q4", "jwtSecret": "onewest" }
