@@ -7,8 +7,8 @@ router.post("/", (req, res) => {
   const user = req.body;
   const API_KEY = process.env.MAILGUN_API_KEY || "test";
   const DOMAIN = process.env.MAILGUN_DOMAIN || "test";
-  console.log(API_KEY);
-  const mg = mailgun({ api_key: API_KEY, domain: DOMAIN });
+
+  const mg = mailgun({ apiKey: API_KEY, domain: DOMAIN });
   const data = {
     from: user.email,
     to: "william.butler0423@gmail.com",
