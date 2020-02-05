@@ -1,6 +1,4 @@
 import React from "react";
-import Profile from "./Profile";
-import Connection from "./Connection";
 import { Link } from "react-router-dom";
 
 export default function Home() {

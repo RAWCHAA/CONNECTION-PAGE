@@ -1,10 +1,5 @@
 import React from "react";
-import FontAwesome from "react-fontawesome";
 import { Link } from "react-router-dom";
-import Profile from "./Profile";
-import Connection from "./Connection";
-import Interest from "./Interest";
-import contacts from "./Contacts";
 
 export default function Navbar() {
   return (

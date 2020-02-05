@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import a from "../photos/0.jpg";
 import b from "../photos/1.jpg";
 import c from "../photos/2.jpg";
@@ -24,46 +23,46 @@ export default function Photos() {
       <div className="gallery">
         <h1>Moments With Rawchaa</h1>
         <div>
-          <img src={a} />
+          <img src={a} alt="" />
         </div>
         <div>
-          <img src={b} />
+          <img src={b} alt="" />
         </div>
         <div>
-          <img src={c} />
+          <img src={c} alt="" />
         </div>
         <div>
-          <img src={d} />
+          <img src={d} alt="" />
         </div>
         <div>
-          <img src={e} />
+          <img src={e} alt="" />
         </div>
         <div>
-          <img src={f} />
+          <img src={f} alt="" />
         </div>
         <div>
-          <img src={g} />
+          <img src={g} alt="" />
         </div>
         <div>
-          <img src={h} />
+          <img src={h} alt="" />
         </div>
         <div>
-          <img src={i} />
+          <img src={i} alt="" />
         </div>
         <div>
-          <img src={j} />
+          <img src={j} alt="" />
         </div>
         <div>
-          <img src={k} />
+          <img src={k} alt="" />
         </div>
         <div>
-          <img src={l} />
+          <img src={l} alt="" />
         </div>
         <div>
-          <img src={m} />
+          <img src={m} alt="" />
         </div>
         <div>
-          <img src={n} />
+          <img src={n} alt="" />
         </div>
       </div>
       <Footer />

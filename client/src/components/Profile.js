@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 import d from "../photos/3.jpg";
 
 export default function Profile() {
@@ -12,7 +11,7 @@ export default function Profile() {
         <div className="row">
           <div className="small-12 medium-2 large-2 columns">
             <div className="circle">
-              <img className="pic profile-pic" src={d} />
+              <img className="pic profile-pic" src={d} alt="" />
             </div>
           </div>
         </div>

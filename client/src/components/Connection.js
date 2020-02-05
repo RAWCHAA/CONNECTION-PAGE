@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import $ from "jquery";
 import axios from "axios";
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 export default function Connection() {
   const [name, setName] = useState("");
@@ -13,8 +12,6 @@ export default function Connection() {
   const [url, setUrl] = useState("");
   const [message, setMessage] = useState("");
   const [photo, setPhoto] = useState("");
-
-  const params = useParams();
   const history = useHistory();
 
   const handleUpload = async id => {
