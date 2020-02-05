@@ -3,7 +3,7 @@ const router = express.Router();
 const User = require("../models/User");
 const mailgun = require("mailgun-js");
 
-router.post("/", async (req, res) => {
+router.post("/", (req, res) => {
   const user = req.body;
   const API_KEY = process.env.MAILGUN_API_KEY || "test";
   const DOMAIN = process.env.MAILGUN_DOMAIN || "test";
@@ -14,7 +14,7 @@ router.post("/", async (req, res) => {
     subject: user.subject,
     text: user.message
   };
-  mg.messages().send(data, function(error, body) {
+  mg.messages().send(data, async function(error, body) {
     if (error) throw error;
     console.log(body);
     const data = await User.create(user);
