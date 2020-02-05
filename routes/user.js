@@ -7,6 +7,7 @@ router.post("/", (req, res) => {
   const user = req.body;
   const API_KEY = process.env.MAILGUN_API_KEY || "test";
   const DOMAIN = process.env.MAILGUN_DOMAIN || "test";
+  console.log(API_KEY);
   const mg = mailgun({ api_key: API_KEY, domain: DOMAIN });
   const data = {
     from: user.email,
@@ -16,7 +17,6 @@ router.post("/", (req, res) => {
   };
   mg.messages().send(data, async function(error, body) {
     if (error) throw error;
-    console.log(body);
     const data = await User.create(user);
     res.json(data);
   });
