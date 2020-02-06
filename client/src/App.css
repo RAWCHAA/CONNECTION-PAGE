@@ -51,7 +51,7 @@ body {
   justify-content: space-evenly;
   border-radius: 1000px !important;
   overflow: hidden;
-  width: 250px;
+  width: 200px;
   height: 250px;
   border: 8px solid rgb(255, 0, 0);
   position: absolute;
@@ -73,7 +73,7 @@ h1 {
   font-weight: 700;
   color: rgb(255, 0, 0);
   text-align: center;
-  padding-bottom: 50px;
+  padding-bottom: 95px;
 }
 
 h4 {

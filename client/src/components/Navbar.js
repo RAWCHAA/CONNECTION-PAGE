@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <Link to="../Profile">
-        <h4>WILLIAM BUTLER</h4>
+        <h4>Rawchaa Ahraya</h4>
       </Link>
       <Link to="../Photos">
         <i className="far fa-images"></i>

@@ -16,7 +16,7 @@ export default function Profile() {
           </div>
         </div>
         <div className="contained">
-          <h1>WILLIAM BUTLER</h1>
+          <h1> Rawchaa Ahraya</h1>
           <p>
             Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
             nibh, ut fermentum massa justo sit amet risus. Praesent commodo
