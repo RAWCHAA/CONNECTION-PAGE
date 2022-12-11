@@ -23,7 +23,7 @@
   "homepage": "https://github.com/RAWCHAA/CONNECTION-PAGE#readme",
   "dependencies": {
     "config": "^3.2.5",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "mailgun-js": "^0.22.0",
     "mongoose": "^5.8.10",
     "multer": "^1.4.2"
